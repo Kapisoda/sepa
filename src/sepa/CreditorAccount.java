@@ -24,5 +24,4 @@ public class CreditorAccount {
 	      return "IBAN="+iban;
 	   }
 	
-
 }

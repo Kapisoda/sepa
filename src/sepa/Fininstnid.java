@@ -24,5 +24,4 @@ public class Fininstnid {
 	      return "BIC="+bic;
 	}
 	
-	
 }

@@ -1,20 +1,11 @@
 package sepa;
 
-import java.awt.Graphics;
-import java.awt.List;
+
 import java.io.File;
-import java.util.Iterator;
-import java.util.ListIterator;
+
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
-
-
-
-
-
-
-
 
 public class demo {
 	public static void main(String[] args) throws Exception {
@@ -24,13 +15,8 @@ public class demo {
 	        Unmarshaller unmarshaller = jc.createUnmarshaller();
 	        Document prviDocument = (Document) unmarshaller.unmarshal(new File("C:\\test.xml"));
 	        
-	      
 	       //System.out.println(prviDocument);
 	        
-	        
-	   
-	        
-	      
 	        	Cstmrcdttrfinitn cst = prviDocument.getCstmrcdttrfinitn().get(0);
 	  
 	        	System.out.println("Group Header:");
@@ -50,7 +36,6 @@ public class demo {
 	        		Dbtracct debtorAccount = paymentInformation.getDbtracct().get(0);
 	        		System.out.println("IBAN : "+debtorAccount.getIban());
 	        		
-	        		
 	        		for( int j=0; j< paymentInformation.getCdttrftxinf().size(); j++){
 	        			System.out.println("----------------------Pocetak Naloga------------------------------------");
 	        			
@@ -68,24 +53,6 @@ public class demo {
 	        		}
 	        		System.out.println("------------------------Kraj Payment information-------------------------------");
 	        	}
-	        	
-	        	
 	        	System.out.println("================================KRAJ XML-a===================================");
-	        	
-	        	
-	        	
-	        
-	        	
-	        	
-	        	
-	        	
-	        	
-	        	
-	        	
-	        	
-	        	
-	        	
-	        	
-	       
 		}
 }

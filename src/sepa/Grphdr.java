@@ -20,10 +20,6 @@ public class Grphdr {
 	@XmlElementWrapper(name = "InitgPty")
 	@XmlElement(name ="Nm")
 	 private List<String> nm;
-	
-	
-	
-
 
 	public List<String> getNm() {
 		return nm;
@@ -63,6 +59,5 @@ public class Grphdr {
 	      +" credttm ="+ credttm +System.lineSeparator() +" nboftxs="+nboftxs+
 	      System.lineSeparator()+" nm=" + nm + "";
 	   }
-	
 
 }

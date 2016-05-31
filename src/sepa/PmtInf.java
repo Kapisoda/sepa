@@ -25,11 +25,7 @@ public class PmtInf {
 	
 	@XmlElement(name="CdtTrfTxInf")
 	private List <Cdttrftxinf> cdttrftxinf;
-	
 
-	
-	
-	
 	public List<Cdttrftxinf> getCdttrftxinf() {
 		return cdttrftxinf;
 	}
@@ -54,9 +50,6 @@ public class PmtInf {
 		this.pmtmtd = pmtmtd;
 	}
 
-	
-	
-
 	public List<String> getNm() {
 		return nm;
 	}
@@ -65,8 +58,6 @@ public class PmtInf {
 		this.nm = nm;
 	}
 
-	
-	
 	public List<Dbtracct> getDbtracct() {
 		return dbtracct;
 	}
@@ -75,9 +66,6 @@ public class PmtInf {
 		this.dbtracct = dbtracct;
 	}
 	
-	
-	
-
 	public List<Fininstnid> getFininstnid() {
 		return fininstnid;
 	}
@@ -95,9 +83,5 @@ public class PmtInf {
 	    		  System.lineSeparator()+fininstnid+
 	    		  System.lineSeparator()+cdttrftxinf;
 	   }
-
-
-	
-	
 
 }
